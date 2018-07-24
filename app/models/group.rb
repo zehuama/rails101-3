@@ -1,3 +1,3 @@
 class Group < ApplicationRecord
-  validates :title, presence: true
+  validates :title, presence: {message: "can't be blank!"}
 end
