@@ -5,8 +5,12 @@ Rails.application.routes.draw do
     resources :posts
     member do
       post :join
-      post :quit 
+      post :quit
     end
+  end
+
+  namespace :account do
+    resources :groups
   end
   root 'groups#index'
 end
